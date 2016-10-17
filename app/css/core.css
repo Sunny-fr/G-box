@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(../../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+body {
+    padding-top:60px;
+}
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.core {
+    margin:20px;
+}
+
+.list-item {
+    border-bottom: 1px solid #F9F9F9;
+    cursor: pointer;
+    background-color: rgba(255,255,255,1);
+    transition: background-color 300ms ease-out;
+}
+.list-item:hover {
+    background-color: rgba(0,0,0,.1)
+}
+.flx {
+    display: inline-block;
+    margin: auto;
+}
+.flx-v {
+    margin:0 auto;
+}
+.flx-h {
+    margin: auto 0;
+}
+.list-item:last-child {
+    border-bottom: 0;
+}
+
+.list-item .item-icon {
+    width: 60px;
+    float:left;
+    min-height: 60px;
+    text-align: center;
+    display: flex;
+}
+.list-item .item-content {
+    width: calc(100% - 60px);
+    float:left;
+    min-height: 60px;
+    display: flex;
+}
+.list-item:after {
+    display: block;
+    content:"";
+    clear:left
+}
+.modal-body.full {
+    height: 70%;
+    overflow: scroll
+}
+.modal-dialog.animated {
+    animation-duration: 300ms;
+}
+
+.more-tools {
+    position: relative;
+    padding-right: 10px;
+}
+.dropdown-wrapper {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    min-width: 240px;
+    animation-duration: 350ms
+}
+.navbar button, .navbar .btn {
+    color:#FFF
+}
+ul.dropdown {
+    padding: 10px 0;
+    margin: 0;
+}
+.dropdown li {
+    text-align: left;
+    padding: 10px 20px;
+    background-color: rgba(255,255,255,1);
+    transition: background-color 300ms ease-out;
+    cursor: pointer;
+}
+.dropdown.checkable li {
+    padding-left: 50px;
+}
+
+
+.dropdown.checkable li.checked {
+    padding-left: 20px;
+}
+.dropdown.checkable li.checked i {
+    margin-right: 0
+}
+.dropdown li i {
+    margin-right: 10px;
+}
+.dropdown li:hover {
+    background-color: rgba(0,0,0,.1)
+}
+
+
+.navbar .dropdown-wrapper {
+    top: 10px
+}
+.navbar .dropdown.checkable li, .navbar .dropdown.checkable li i {
+    font-size: 13px;
+}
+.navbar .dropdown.checkable li {
+    padding: 5px 20px 5px 40px
+}
+.navbar .dropdown.checkable li.checked{
+    padding-left: 15px;
+    font-weight: bold
+}
+.navbar .dropdown.checkable li.checked i {
+    margin-right: 8px
+}

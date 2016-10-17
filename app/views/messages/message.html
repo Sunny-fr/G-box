@@ -1,0 +1,21 @@
+<% 
+    var unread = !!_.find(labelIds, (o)=> o=='UNREAD');
+    var text = snippet.substr(0,60)
+    var _subject = subject
+ %>
+<div class="item-icon">
+    <div class="flx">
+        <i class="material-icons">mail</i>
+    </div>
+</div>
+<div class="item-content">
+    <div class="flx-h">
+        <% if (unread) { %> 
+            <span class="text-info"><%= from %></span>
+            <strong><%= _subject %></strong>
+        <% } else {%>
+            <span class="text-info"><%= from %></span>
+            <%= _subject %>
+        <% } %>
+    </div>
+</div>

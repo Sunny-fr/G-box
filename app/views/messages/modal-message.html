@@ -1,0 +1,34 @@
+
+<div class="modal-dialog animated fadeInUp">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close closeModal"  aria-hidden="true">×</button>
+        <h4 class="modal-title"><%= subject %></h4>
+        </div>
+        <div class="modal-body">
+            <%= snippet %>
+        </div>
+        <div class="modal-footer">
+            <ul class="list-inline pull-left" style="padding-left:10px;">
+                <li>
+                    <button class="btn btn-raised load-message-text">
+                        <i class="material-icons">format_align_justify</i>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn-raised load-message-html">
+                        <i class="material-icons">art_track</i>
+                    </button>
+                </li>
+            </ul>
+            <ul class="list-inline pull-right" style="padding-left:10px;">
+                <li>
+                    <button class="btn btn-raised btn-info closeModal">
+                        <i class="material-icons">send</i> REPLY
+                    </button>
+                </li>
+            </ul>
+            <div class="more-tools pull-right"></div>
+        </div>
+    </div>
+</div>

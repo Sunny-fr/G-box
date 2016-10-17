@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Gmail Unleashed</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/animate.css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" href="app/css/core.css">
+    <script type="text/javascript">
+      var config = {
+        "web": {
+          "client_id":"1040367260635-foojoljs5qv5cehijotrimh5isj5d98o.apps.googleusercontent.com",
+          "project_id":"single-scholar-146019",
+          "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+          "token_uri":"https://accounts.google.com/o/oauth2/token",
+          "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+          "client_secret":"GPvFHx22_JY2KqXHZN8qVeOz"
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <div id="authme" style="display:none"></div>
+    <div id="pop" style="display:none"><input type="text" id="input" /><a id="go">go</a></div>
+
+    <div id="root"></div>
+  <script>
+    // You can also require other files to run in this process
+    //require('./renderer.js')
+    require('./app.js')
+  </script>
+  </body>
+</html>

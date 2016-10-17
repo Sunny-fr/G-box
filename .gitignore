@@ -1,0 +1,13 @@
+*.iml
+*.idea
+*.idea/*
+*.vscode
+*.vscode/*
+.settings
+.project
+dist
+build
+target
+.DS_Store
+node_modules
+client_secret.json
